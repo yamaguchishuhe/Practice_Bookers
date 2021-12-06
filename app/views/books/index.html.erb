@@ -12,8 +12,16 @@
   <%= @books. each do |book| %>
   <tbody>
     <tr>
-      <td
+      <td></td>
     </tr>
   </tbody>
   </table>
+  <h2>New book</h2>
+  <%= form_with model:@bolg, local:true do  |f| %>
+  <h4>title</h4>
+  <%= f.text_field :title %>
+  <h4>body</h4>
+  <%= f.text_field :body %>
+  
+  <%= f.submit 'Create Book' %>
 </body>
